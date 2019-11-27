@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Vision 4 Site"
 date: 2019-11-26
 ---
