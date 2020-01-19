@@ -13,16 +13,9 @@ for (let i = 0; i < morsels_strings.length; i++) {
 //sdfiusbdfuidsbfusdhbfuh
 function ChangeMorsel() {
   var randomindex = Math.floor(Math.random()*Math.floor(morsels.length))
-  // console.log(1,randomindex);
       while (morsels[randomindex].visited == true) {
-        // console.log(1.5,randomindex);
-        var randomindex = Math.floor(Math.random()*Math.floor(morsels.length))
-        // console.log(2,randomindex);
-
-      }
-      if (morsels[randomindex].visited == false){
-        morsels[randomindex].visited = true;
-        // console.log(morsels[randomindex].string,morsels[randomindex].visited);
-        document.getElementById("ephemeral_line").innerHTML = morsels[randomchoice].string
-        }
+        var randomindex = Math.floor(Math.random()*Math.floor(morsels.length))}
+      morsels[randomindex].visited = true;
+      // console.log(morsels[randomindex].string,morsels[randomindex].visited);
+      document.getElementById("ephemeral_line").innerHTML = morsels[randomchoice].string
 }
