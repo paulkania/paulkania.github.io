@@ -14,7 +14,12 @@ for (let i = 0; i < morsels_strings.length; i++) {
 
 // morsels[1].visited = true;
 // console.log(morsels[1].visited,morsels[1].string);
+var mouseclicks = 0
 function ChangeMorsel() {
+  if (mouseclicks >= morsels.length) {
+    // console.log(morsels[randomindex].string,morsels[randomindex].visited);
+    document.getElementById("ephemeral_line").innerHTML = "you've exhausted my list of morsels, I have no more for you. Please grant me a nap."
+  }
   var randomindex = Math.floor(Math.random()*Math.floor(morsels.length))
       if (morsels[randomindex].visited == true) {
         // console.log('hit');
@@ -22,6 +27,7 @@ function ChangeMorsel() {
       if (morsels[randomindex].visited == false) {
         morsels[randomindex].visited = true;
         // console.log(morsels[randomindex].string,morsels[randomindex].visited);
+        mouseclicks += 1;
         document.getElementById("ephemeral_line").innerHTML = morsels[randomindex].string
 }
 }
