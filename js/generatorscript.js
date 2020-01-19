@@ -10,20 +10,15 @@ var morsels = [];
 for (let i = 0; i < morsels_strings.length; i++) {
 	morsels.push(new Morsel(morsels_strings[i]))
 }
-
-
-var mousecount = 0
-var changeoccurs = false
+//sdfiusbdfuidsbfusdhbfuh
 function ChangeMorsel() {
-  while (changeoccurs == false){
-    if (mousecount<morsels.length){
-      var randomchoice = Math.floor(Math.random()*Math.floor(morsels.length))
-      if (morsels[randomchoice].visited == true){
-        continue;  }
-    //morsels[randomchoice].visited = true
-    changeoccurs = true
-    mousecount += 1
-    document.getElementById("ephemeral_line").innerHTML = morsels[randomchoice].string
-    }
-    }
+  var randomindex = Math.floor(Math.random()*Math.floor(morsels.length))
+      while (morsels[randomindex].visited == true) {
+        var randomindex = Math.floor(Math.random()*Math.floor(morsels.length))
+      }
+      if (morsels[randomindex].visited == false){
+        morsels[randomindex].visited = true;
+        console.log(morsels[randomindex].string,morsels[randomindex].visited); // document.getElementById("ephemeral_line").innerHTML = morsels[randomchoice].string
+        }
 }
+ChangeMorsel()
