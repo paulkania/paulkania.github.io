@@ -20,7 +20,7 @@ function ChangeMorsel() {
       var randomchoice = Math.floor(Math.random()*Math.floor(morsels.length))
       if (morsels[randomchoice].visited == true){
         continue;  }
-    morsels[randomchoice].visited = true
+    //morsels[randomchoice].visited = true
     changeoccurs = true
     mousecount += 1
     document.getElementById("ephemeral_line").innerHTML = morsels[randomchoice].string
