@@ -5,12 +5,26 @@ class Morsel {
     this.visited = false;
   }
 }
-// console.log(morsels_strings[0,2])
 
 var morsels = [];
 for (let i = 0; i < morsels_strings.length; i++) {
 	morsels.push(new Morsel(morsels_strings[i]))
 }
 
-console.log(morsels[1].visited)
-console.log(morsels[1].string)
+
+var mousecount = 0
+var changeoccurs = false
+function ChangeMorsel() {
+  while (changeoccurs == false){
+    if (mousecount<morsels.length){
+      var randomchoice = Math.floor(Math.random()*Math.floor(morsels.length))
+      if (morsels[randomchoice].visited == true){
+        continue;  }
+    morsels[randomchoice].visited = true
+    changeoccurs = true
+    mousecount += 1
+    document.getElementById("ephemeral_line").innerHTML = morsels[randomchoice].visited
+    console.log(mousecount,changeoccurs);
+    }
+}
+}
