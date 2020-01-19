@@ -18,7 +18,8 @@ function ChangeMorsel() {
       }
       if (morsels[randomindex].visited == false){
         morsels[randomindex].visited = true;
-        console.log(morsels[randomindex].string,morsels[randomindex].visited); // document.getElementById("ephemeral_line").innerHTML = morsels[randomchoice].string
+        // console.log(morsels[randomindex].string,morsels[randomindex].visited);
+        document.getElementById("ephemeral_line").innerHTML = morsels[randomchoice].string
         }
 }
 ChangeMorsel()
