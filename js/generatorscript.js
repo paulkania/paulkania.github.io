@@ -27,7 +27,7 @@ function ChangeMorsel() {
     morsels[randomchoice].visited = true
     changeoccurs = true
     mousecount += 1
-    document.getElementById("ephemeral_line").innerHTML = morsels[randomchoice].visited
+    document.getElementById("ephemeral_line").innerHTML = morsels[randomchoice].string
     console.log(mousecount,changeoccurs);
     }
     }
