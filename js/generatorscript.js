@@ -21,14 +21,14 @@ function ChangeMorsel() {
     document.getElementById("ephemeral_line").innerHTML = "you've exhausted my list of morsels, I have no more for you. Please grant me a nap."
   }
   var randomindex = Math.floor(Math.random()*Math.floor(morsels.length))
-      if (morsels[randomindex].visited == true) {
+  else if (morsels[randomindex].visited == true) {
         // console.log('hit');
         ChangeMorsel() }
-      if (morsels[randomindex].visited == false) {
+  else {
         morsels[randomindex].visited = true;
         // console.log(morsels[randomindex].string,morsels[randomindex].visited);
         mouseclicks += 1;
         document.getElementById("ephemeral_line").innerHTML = morsels[randomindex].string
-}
+      }
 }
 // ChangeMorsel()
