@@ -2,17 +2,61 @@ window.onload = function() {
     ResetMorsels()
 };
 
-  const morsels_strings = ['1/5doughnuts from whom?', '2/5blockstream&trgr8', '3/5af_indeed.', '4/5we have 2 geraniums', '5/5dioptic lenses'];
+  var morsels_strings = ['1/5doughnuts from whom?', '2/5blockstream&trgr8', '3/5af_indeed.', '4/5we have 2 geraniums', '5/5dioptic lenses'];
   var morsels_malleable = morsels_strings;
   morsels_strings.push('6/6test');
   var mouseclicks = 0; //length 5
 
 //adding to the list also resets the list so that you can see it in the changed text
-function PushNewItem() {
+function PushNewItemWithReset() {
     var text = document.getElementById("to_push").value;
+
+function equality_check() {
+    for (let i = 0; i < morsels_strings.length; i++) {
+        if (morsels_strings[i] == text) {
+           console.log('for true')
+           return true}
+        }
+   console.log('end for false')
+    return false
+    }
+
+    if (equality_check() == true) { console.log('equality TRUE'); return 0}
+    else {
     morsels_strings.push(text);
-    console.log('inpush function',morsels_strings);
+    console.log('equality false, should be pushing',morsels_strings);
     ResetMorsels()
+    }
+}
+
+function PushNewItemNoReset() {
+    var text = document.getElementById("to_push").value;
+
+function equality_check() {
+    for (let i = 0; i < morsels_strings.length; i++) {
+        if (morsels_strings[i] == text) {
+           console.log('for true')
+           return true}
+        }
+   console.log('end for false')
+    return false
+    }
+
+    if (equality_check() == true) { console.log('equality TRUE'); return 0}
+    else {
+    morsels_strings.push(text);
+    console.log('equality false, should be pushing',morsels_strings);
+//    ResetMorsels()
+    }
+}
+
+
+function ClearList() {
+    morsels_malleable = [];
+//    while (morsels_strings.length) {
+    morsels_strings = [];
+//    }
+    console.log('end of clear fn', morsels_malleable)
 
 }
 //empty and re-fill index_array, and refresh mouseclicks.
