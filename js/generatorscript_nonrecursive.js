@@ -14,6 +14,7 @@ function ResetMorsels() {
     mouseclicks = 0
     document.getElementById("ephemeral_line").innerHTML = "ok, i've been refreshed, hit me bb";
     }
+  console.log(morsels_malleable)
 }
 
 // if the morsel array isnt empty
@@ -21,9 +22,10 @@ function ResetMorsels() {
 // 	    delete ith index (make sure u delete the right one
 function ChangeMorsel() {
   mouseclicks += 1;
-  if (morsel_index.length) {
+  if (morsels_malleable.length) {
+    console.log('a',morsels_malleable)
     var randomindex = Math.floor(Math.random()*morsels_malleable.length)
-    document.getElementById("ephemeral_line").innerHTML = morsels_malleable[randomindex].string
+    document.getElementById("ephemeral_line").innerHTML = morsels_malleable[randomindex]
     morsels_malleable.splice(randomindex,1)     // array.splice(index, 1);
     }
   else {
