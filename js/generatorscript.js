@@ -53,3 +53,4 @@ var randomindex = Math.floor(Math.random()*Math.floor(morsels.length))
     console.log('end',mouseclicks-morsels.length);
     }
 }
+//why doesnt github ack my current js file?
