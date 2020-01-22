@@ -7,7 +7,7 @@ function ResetMorsels() {
   morsels_malleable = []
 
   for (let i = 0; i < morsels_strings.length; i++) {
-    morsels_malleable.push(i)
+    morsels_malleable.push(morsels_strings[i])
     }
 
   if (mouseclicks > 0){
@@ -29,7 +29,7 @@ function ChangeMorsel() {
     morsels_malleable.splice(randomindex,1)     // array.splice(index, 1);
     }
   else {
-    document.getElementById("ephemeral_line").innerHTML = "There aren't any more juicy morsels, but you hit reset to eat more morsels. uve over-hit me"+(mouseclicks-morsels.length+1)  +"  # time(s)";
+    document.getElementById("ephemeral_line").innerHTML = "There aren't any more juicy morsels, but you hit reset to eat more morsels. uve over-hit me"//+(mouseclicks-morsels.length+1)  +"  # time(s)";
     }
 }
 //why doesnt github ack my current js file?
