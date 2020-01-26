@@ -1,16 +1,48 @@
----
-layout: default
-title: Paul Kania @ CV
-permalink: /cv.html
----
-<h2>{{ page.title }}</h2>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/css/cv.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/favicon/site.webmanifest">
+	<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<nav>
+	<ul>
+		<li><a href="/">Home</a></li>
+		<!--<li><a href="/about/">About</a></li>-->
+		<li><a href="/cv.html">CV</a></li>
+		<li><a href="/AOCteroids.html">AOCteroids</a></li>
+		<li><a href="/generator.html">Morsel Generator</a></li>
+		<li><a href="/blockstream/">Blockstream Bot</a></li>
+		<li><a href="/emscripten_posts/olc5.html">Emscripten POC</a></li>
+
+
+		
+		<!--<li><a href="/levenshtein.html">Levenshtein's Distance</a></li> -->
+	</ul>
+</nav>
 <!--w793.9 h1123.8 for a4 pixel page.. -->
-<embed type ="application/pdf" src="/assets/resume.pdf#view=FitH"
-	width="830"
-	height="1145">
-	
-<video controls width="250">
-    <source src="/assets/balls.mp4"
-            type="video/mp4">
-    Sorry, your browser doesn't support embedded videos.
-</video>
+<div class="container">
+<div class="item">
+	<div><embed type ="application/pdf" src="/assets/resume.pdf#view=FitH"
+		width="830"
+		height="1145"></div>
+
+	<!--<iframe width="420" height="315" 
+	src="https://youtu.be/I2NMu7v2Lf0" 
+	frameborder="0" allowfullscreen></iframe>-->
+
+<div class="item"><video controls <!--width="830">-->
+		This is a title that goes here.
+		<source src="/assets/balls.mp4"
+				type="video/mp4">
+		Sorry, your browser doesn't support embedded videos.
+	</video></div>
+</div>
+
+</body>
+</html>
