@@ -1,0 +1,31 @@
+---
+layout: default
+title: Paul Kania @ Blockstream Bot
+---
+<body>
+<h2>{{ page.title }}</h2>
+-----------------------------------------------------
+<p @blockstream_team (both username and handle) KISS<br>
+
+avatar: blockstream with this robot inside of the blockstream circle<br>
+
+
+Methodology:<br>
+keeping up -> use tweepy streaming API. then I won’t have to sort by age, and if the listening is constant, i dont have to set up a manual polling interval/<br>
+
+
+so you can get user timeline (account_id, since_post_id, count). of each blockstream user.<br>
+so for EACH user<br>
+1.initialize unique sincepost_id # (see what there latest post is to initialize)<br>
+	2. get user timeline (account_id, since_post_id, count).<br>
+	3.retweet tweet.meat<br>
+	4. update unique_since_post_id, (so that the next time you run the program, it pulls <br>
+only more recent hits. you may have to save this post_id to a json file, because it’s not like you can automatically<br>
+save python script after utilizing it...that would be a self-changing python script. makes more sense to go through a cycle of.<br>
+pull data [pwuille: 1245939, halset: 123335,]<br>
+check to see if more recent things have happened since (play with count to balance # of tweets per user. this is something you can tweek as time goes on, no need to perfect ir right away.<br>
+push//overwrite the user:since id dictionary. bam should be a solid day project, knock on wood.<br>
+use pickle to save and load the dictionary object -> relevnt s_overflow<br>
+ </p>
+
+</body>

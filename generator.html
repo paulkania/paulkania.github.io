@@ -1,22 +1,28 @@
 ---
 layout: default
 title: Paul Kania @ Generator
+<!--permalink: /generator/-->
 ---
 <body>
-<h1>{{ page.title }}</h1>
+<h2>{{ page.title }}</h2>
+<br><br>
 
-<p id="ephemeral_line">Click</p>
+<p id="ephemeral_line" > Click Next Text..</p>
+<br>
 <!--<p id="morsels_length">morsel_array_length</p>-->
 
 
-<button onclick="ChangeMorsel()">Change text</button>	<br><br>
+<button onclick="ChangeMorsel()">Next Text</button>	<br><br>
 <button onclick="ResetMorsels()">Reset Text</button>	<br><br>
-<button onclick="PushNewItemWithReset()">Add To The List AndReset</button><br><br>
+<button onclick="PushNewItemWithReset()">Add To The List And Reset</button>
 <button onclick="PushNewItemNoReset()">Add To The List No Reset</button><br><br>
+<textarea id="to_push" rows="8" cols="42">
+Add Whatever It Is You want, then add it to the list (button), from there, you can cycle through.
+The list, and i promise, you'll find it. You can clear the list as well, so that it's only your
+goody morsels that go in.
+</textarea><br>
 <button onclick="ClearList()">Clear The List</button><br>
-<textarea id="to_push" rows="5" cols="33">
-7/7It was a dark and stormy night...
-</textarea>
+
 
 <script src="js/generatorscript_nonrecursive.js"></script>
 </body>
