@@ -1,3 +1,8 @@
+#ephemeral_line {
+min-height: 10.0em;	
+/*position: relative; && padding: 30px;were used and discarded*/
+}
+
 body {
     margin: 60px auto;
     width: 70%;
