@@ -9,6 +9,6 @@ permalink: /blockstream/
 [![alttext_meaningless_butcantbeempty_except_mb_accesibility](/assets/bs_wiz.png)](https://twitter.com/BlockstreamTeam)
 
 
-You Can Check out the Bot [Here](https://twitter.com/BlockstreamTeam).
+You Can Check out the Bot [Here](https://twitter.com/BlockstreamTeam), or click on the avatar.
 
 You Can Find The Source-Code and some explanation [Here](https://github.com/PaulKania/Euler_And_/tree/master/Precipated_Projects/bstreambot).
