@@ -2,44 +2,47 @@ window.onload = function() {};
 
 
 //adding to the list also resets the list so that you can see it in the changed text
-function PushAsteroidString() {
-    var homebase = parseInt(document.getElementById("base_asteroid").value);
-    var rowtext = parseInt(document.getElementById("row_asteroid").value);
-    var coltext = parseInt(document.getElementById("col_asteroid").value);
+function GetUserData() {
+    const homebase = parseInt(document.getElementById("base_asteroid").value);
+    const rowtext = parseInt(document.getElementById("row_asteroid").value);
+    const coltext = parseInt(document.getElementById("col_asteroid").value);
     var data = document.getElementById("textarea_push").value;
-    data = data.replace(/(?:\r\n|\r|\n)/g, '');
-//    console.log('hit1');
-//    console.log(rowtext,coltext,data);
-//    console.log(typeof rowtext,typeof coltext,typeof data);
-    return [rowtext,coltext,data,homebase]
+    data = data.replace(/(?:\r\n|\r|\n)/g, ''); //removes newlines
+    data=data.replace(/\s/g,'') //removes whitespace. works.
+    var count = 0
+    for (let i = 0; i < data.length; i++) { //finding xhome,yhome
+        if (data[i] == '+'){
+            count++;
+        if (count == homebase){
+            var indexhome = i;
+//            var xhome = i % coltext
+//            var yhome  = Math.floor(i/coltext);
+            break;
+            }
+        }
+    }
+    return [rowtext,coltext,data,indexhome]
 }
 
 
 
 function Find_nth_Asteroid_xy(){
-    rowtext = PushAsteroidString()[0]
-    coltext = PushAsteroidString()[1]
-    data = PushAsteroidString()[2]
-    homebase = PushAsteroidString()[3]
+    user_data = GetUserData()
+    rowtext = user_data[0];
+    coltext = user_data[1];
+    data = user_data[2];
+    indexhome = user_data[3];
+    var xhome = indexhome%coltext;
+    var yhome = Math.floor(indexhome/coltext);
 //    console.log(rowtext)
 //    console.log(coltext)
 //    console.log('h',homebase)
 //    console.log(data,data.length)
-    var count = 0
-    for (let i = 0; i < data.length; i++) { //finding xhome,yhome
-        if (data[i] == '#'){
-            count++;
-        if (count == homebase){
-            var xhome = i % coltext
-            var yhome  = Math.floor(i/coltext);
-            break;
-            }
-        }
-    }
+
 
     var allasteroids = []
     for (let index = 0; index < data.length; index++) {
-        if (data[index] == '#') {
+        if (data[index] == '+') {
             var xcurrent = index % coltext;
             var ycurrent = Math.floor(index/coltext);
             var manhattan_dist = Math.abs(xcurrent-xhome)+Math.abs(ycurrent-yhome)
@@ -58,7 +61,7 @@ allasteroids=allasteroids.sort(function(a,b) {
 var asteroid_dict = {};
 var current_angle = -0.1;
 for (let index = 0; index < allasteroids.length; index++) {
-    asteroid_dict[allasteroids[index]]=false;
+    asteroid_dict[allasteroids[index]] = false;
 //    console.log('exp',asteroid_dict[allasteroids[index]]); //should be false
 //    console.log('111',allasteroids[index]);
 //    console.log('22222',typeof(allasteroids[index][0]),allasteroids[index][0],typeof(current_angle),current_angle); // allasteroids[index][0] ==angle
@@ -66,12 +69,14 @@ for (let index = 0; index < allasteroids.length; index++) {
 var planet_smasher_counter = 0;
 var anslist = [];
 //asteroid dict data is flat. ex: 0.4636476090008061,3,0,0: false. [angle,manhatD,xpos,ypos]:bool
-while (allasteroids.length>planet_smasher_counter) {
-    planet_smasher_counter+=1;
+//console.log('pre1',asteroid_dict)
+while (planet_smasher_counter<allasteroids.length) {
     for (let index = 0; index < allasteroids.length; index++) {
-        var reset_circle = false;
+        var asteroid_hit = false;
+//        console.log('pre2',asteroid_dict[allasteroids[index]])
+//    console.log('pre3',allasteroids[index])
         if (allasteroids[index][0] > current_angle && asteroid_dict[allasteroids[index]]==false){
-            reset_circle = true;
+            asteroid_hit = true;
             asteroid_dict[allasteroids[index]] = true;
 //            console.log('post',asteroid_dict[allasteroids[index]]); //should be true
             anslist.push(allasteroids[index][2]);
@@ -79,73 +84,82 @@ while (allasteroids.length>planet_smasher_counter) {
             planet_smasher_counter +=1;
             }
         }
-    if (reset_circle == false) {
-        current_angle =-0.1;
-        }
+    if (asteroid_hit == false) {current_angle =-0.1;}
     }
+//console.log('allasteroids',allasteroids)
+//console.log('post22',[allasteroids[index]])
+//console.log('allastlength & planetsmashercounter',allasteroids.length,planet_smasher_counter)
+//console.log(anslist)
 return anslist
-}   //end function
+}//end function
+
+function draw() {
+//  GetUserData();
+  user_data = GetUserData();
+  rowtext = user_data[0];
+  coltext = user_data[1];
+  data = user_data[2]; //data
+  indexhome = user_data[3];
+//  console.log(rowtext,coltext,data,indexhome);
+      var canvas = document.getElementById('canvas');
+      if (canvas.getContext) {
+        var ctx = canvas.getContext('2d');
+        ctx.clearRect(0, 0, 150, 300);
+//        var matrixlength = coltext*rowtext;
+//        var home_base_1d = home_base_1d[0];
+        var index;
+        for (let row = 0; row < rowtext; row++) {
+             for (let col = 0; col < coltext; col++) {
+                index = (coltext*row) +col;
+                if (data[index] != '+' && data[index] != '~'){
+                    ctx.clearRect(0, 0, 150, 300);
+                    ctx.font = "40px Arial";
+                    ctx.fillText("~+ only", 10, 150);
+                    return}
+                if (index == indexhome){
+                    ctx.fillStyle = 'purple'; //asteroid-blue
+                    ctx.fillRect(col*30, row*30, 30, 30);
+                    continue;
+                    }
+                if (data[index] == '+') {
+                    ctx.fillStyle = 'orange'; //asteroid-blue
+                    ctx.fillRect(col*30, row*30, 30, 30);
+                    }
+                else if (data[index] == '~') {
+                    ctx.fillStyle = 'grey'; //spacey-white
+                    ctx.fillRect(col*30, row*30, 30, 30);
+                    }
+                }
+               }
 
 
-/*
-function PushNewItemNoReset() {
-    var text = document.getElementById("to_push").value;
-
-function equality_check() {
-    for (let i = 0; i < morsels_strings.length; i++) {
-        if (morsels_strings[i] == text) {
-           console.log('for true')
-           return true}
+         }
+}
+function explode() {
+    function timer(ms) {
+        return new Promise(res => setTimeout(res, ms));
         }
-   console.log('end for false')
-    return false
+    draw();
+//    console.log(rowtext); //should work since i called draw.
+    const shoot_array = Find_nth_Asteroid_xy();
+//    console.log('pre',mutuable_shoot_array);
+//    console.log('pre',mutuable_shoot_array);
+    var mutuable_shoot_array = shoot_array;
+    var next;
+async function load () {
+    while (mutuable_shoot_array.length) {
+        next = mutuable_shoot_array.shift()
+        var canvas = document.getElementById('canvas');
+        if (canvas.getContext) {
+            var ctx = canvas.getContext('2d');
+            ctx.fillStyle = 'black'; //asteroid-blue
+            ctx.fillRect(next[0]*30, next[1]*30, 30, 30);
+//            console.log('next',next,next[0],next[1])
+//            console.log('post',mutuable_shoot_array);
+            await timer(300);
+            }
+        }
     }
-
-    if (equality_check() == true) { console.log('equality TRUE'); return 0}
-    else {
-    morsels_strings.push(text);
-    console.log('equality false, should be pushing',morsels_strings);
-//    ResetMorsels()
-    }
+load();
 }
-
-
-function ClearList() {
-    morsels_malleable = [];
-//    while (morsels_strings.length) {
-    morsels_strings = [];
-//    }
-    console.log('end of clear fn', morsels_malleable)
-
-}
-//empty and re-fill index_array, and refresh mouseclicks.
-  function ResetMorsels() {
-    morsels_malleable = [];
-
-    for (let i = 0; i < morsels_strings.length; i++) {
-      morsels_malleable.push(morsels_strings[i])
-      }
-    if (mouseclicks > 0) {
-      mouseclicks = 0
-      document.getElementById("ephemeral_line").innerHTML = "ok, i've been refreshed, hit me bb";
-      }
-    console.log('end of reset fn', morsels_malleable)
-  }
-
-// if the morsel array isnt empty
-//  	doc read random morsel string
-// 	    delete ith index (make sure u delete the right one
-  function ChangeMorsel() {
-    mouseclicks += 1;
-    if (morsels_malleable.length) {
-      var randomindex = Math.floor(Math.random() * morsels_malleable.length)
-      document.getElementById("ephemeral_line").innerHTML = morsels_malleable[randomindex]
-      morsels_malleable.splice(randomindex, 1)     // array.splice(index, 1);
-    } else {
-      document.getElementById("ephemeral_line").innerHTML = "There aren't any more juicy morsels, but you hit reset to eat more morsels. uve over-hit me"//+(mouseclicks-morsels.length+1)  +"  # time(s)";
-    }
-  console.log('end of change fn',morsels_malleable)
-  }
-//why doesnt github ack my current js file?
-
-*/
+//}
