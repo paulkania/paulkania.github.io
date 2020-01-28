@@ -163,15 +163,28 @@ function draw() {
 
          }
 }
+function reset() {
+    
+}
 function explode() {
-    function timer(ms) {
-        return new Promise(res => setTimeout(res, ms));
-        }
+
+
+
+    //avoid explode nonsense?
     draw();
     if(draw()==true){
         console.log('bad_input',draw())
         return}
-//    console.log(rowtext); //should work since i called draw.
+    function timer(ms) {
+        return new Promise(res => setTimeout(res, ms));
+        }
+    user_data = GetUserData()
+    rowtext = user_data[0];
+    coltext = user_data[1];
+    data = user_data[2];
+    indexhome = user_data[3];
+    var xhome = indexhome%coltext;
+    var yhome = Math.floor(indexhome/coltext);
     const shoot_array = Find_nth_Asteroid_xy();
 //    console.log('pre',mutuable_shoot_array);
 //    console.log('pre',mutuable_shoot_array);
@@ -186,6 +199,11 @@ async function load () {
             var ctx = canvas.getContext('2d');
             ctx.fillStyle = 'grey'; //asteroid-blue
             ctx.fillRect(next[0]*20, next[1]*20, 20, 20);
+
+            ctx.strokeStyle = 'pink';
+            ctx.moveTo(xhome*20+10, yhome*20+10);
+            ctx.lineTo(next[0]*20+10, next[1]*20+10);
+            ctx.stroke();
 //            console.log('next',next,next[0],next[1])
 //            console.log('post',mutuable_shoot_array);
             await timer(150);
