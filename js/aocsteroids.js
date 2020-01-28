@@ -1,5 +1,31 @@
-window.onload = function() {};
-
+//window.onload = function() {
+//    information();
+//};
+//
+//function information(){
+//window.alert(`Hello wo~~+~~++~+++~~~++++++
+//+~++~++++++++++++~~+
+//+~~~+~++++++~+++++++
+//+~+~~+++~+++++++~+++
+//+~+~~+++++~++~+~++~+
+//++~++~~~+++++~~+~+++
+//++++++~+++++++++++++
+//+++++++~+~++++~~~~++
+//+~+~+~++~++~++++++++
+//+++++++++~+++++~++~+
+//++~~++++~~~~~++++++~
+//~++~+++++++~++++~++~
+//++++~~~++~~+~~+++++~
+//~+~++++++~+++~++~~~+
+//~++++++++++~~~~+~+++
+//+++++++~+++++++~~+++
+//+~+~+++~+++~+~++~~~~
+//~++~++~+++~~+++++~~+
+//~+~+++++++++++~+++~+
+//~+~+~+++++~++++~+++~
+//+++~++~++++~++~+~~++
+//rld!`);
+//}
 
 //adding to the list also resets the list so that you can see it in the changed text
 function GetUserData() {
@@ -100,6 +126,7 @@ function draw() {
   coltext = user_data[1];
   data = user_data[2]; //data
   indexhome = user_data[3];
+  var bad_input = false;
 //  console.log(rowtext,coltext,data,indexhome);
       var canvas = document.getElementById('canvas');
       if (canvas.getContext) {
@@ -115,14 +142,15 @@ function draw() {
                     ctx.clearRect(0, 0, 400, 400);
                     ctx.font = "40px Arial";
                     ctx.fillText("~+ only", 10, 150);
-                    return}
+                    bad_input = true;
+                    return bad_input}
                 if (index == indexhome){
                     ctx.fillStyle = 'purple'; //asteroid-blue
                     ctx.fillRect(col*20, row*20, 20, 20);
                     continue;
                     }
                 if (data[index] == '+') {
-                    ctx.fillStyle = 'orange'; //asteroid-blue
+                    ctx.fillStyle = 'brown'; //asteroid-blue
                     ctx.fillRect(col*20, row*20, 20, 20);
                     }
                 else if (data[index] == '~') {
@@ -140,6 +168,9 @@ function explode() {
         return new Promise(res => setTimeout(res, ms));
         }
     draw();
+    if(draw()==true){
+        console.log('bad_input',draw())
+        return}
 //    console.log(rowtext); //should work since i called draw.
     const shoot_array = Find_nth_Asteroid_xy();
 //    console.log('pre',mutuable_shoot_array);
