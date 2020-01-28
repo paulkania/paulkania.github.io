@@ -3,9 +3,12 @@ min-height: 10.0em;
 /*position: relative; && padding: 30px;were used and discarded*/
 }
 
+
+
 body {
+	background-color: #007777;
     margin: 60px auto;
-    width: 70%;
+    width: 80%;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';

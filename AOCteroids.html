@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: nofooter
 title: Paul Kania @ Asteroids
 <!--permalink: /generator/-->
 ---
@@ -9,53 +9,53 @@ title: Paul Kania @ Asteroids
 <!--p id="ephemeral_linex" > Click Next Text..</p>-->
 <!--<p id="morsels_length">morsel_array_length</p>-->
 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet"/>
+<!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet"/>-->
+
 <div class="container">
   <div class="row">
     <div class="col">
-     <label for="row_asteroid">Rows in Matrix:</label>
-<input type="text" id="row_asteroid" name="row_asteroid" value =21 required
-       minlength="1" maxlength="3" size="5">
+     <label for="row_asteroid">Rows in Matrix [1-x-35]:</label>
+<input type="text" id="row_asteroid" name="row_asteroid" value =30 required
+       minlength="1" maxlength="3" size="1">
 <br> 
-<label for="col_asteroid">Columns in Matrix:</label>
-<input type="text" id="col_asteroid" name="col_asteroid" value =20 required
-       minlength="1" maxlength="3" size="5">
+<label for="col_asteroid">Columns in Matrix [1-y-30]:</label>
+<input type="text" id="col_asteroid" name="col_asteroid" value =30 required
+       minlength="1" maxlength="3" size="1">
 <br>
-<label for="base_asteroid">Which Asteroid Will Your Home Base? Count L->R:</label>
+	   <label for="percent_asteroids">Percentage Asteroids [0 to 100]:</label>
+<input type="text" id="percent_asteroids" name="percent_asteroids" value =50 required
+       minlength="1" maxlength="3" size="1">
+<br>
+<label for="base_asteroid">Home Base Asteroid [Count L > R]:</label>
 <input type="text" id="base_asteroid" name="base_asteroid" value =169 required
-       minlength="1" maxlength="3" size="5">
+       minlength="1" maxlength="3" size="1">
+<br>
+<label for="laser_speed">LaZer Speed [milliseconds]:</label>
+<input type="text" id="laser_speed" name="laser_speed" value =100 required
+       minlength="1" maxlength="4" size="1">
+<br>	   
+<label for="asteroid_stop">Stop @ Which Asteroid?:</label>
+<input type="text" id="asteroid_stop" name="asteroid_stop" value =12 required
+       minlength="1" maxlength="3" size="1">	   
 
 <br>
-<button onclick="draw()">Draw</button>
-<button onclick="explode()">Explode!</button>
-<button onclick="reset()">reset!</button>
-<textarea id="textarea_push" rows="25" cols="50">
-~~+~~++~+++~~~++++++
-+~++~++++++++++++~~+
-+~~~+~++++++~+++++++
-+~+~~+++~+++++++~+++
-+~+~~+++++~++~+~++~+
-++~++~~~+++++~~+~+++
-++++++~+++++++++++++
-+++++++~+~++++~~~~++
-+~+~+~++~++~++++++++
-+++++++++~+++++~++~+
-++~~++++~~~~~++++++~
-~++~+++++++~++++~++~
-++++~~~++~~+~~+++++~
-~+~++++++~+++~++~~~+
-~++++++++++~~~~+~+++
-+++++++~+++++++~~+++
-+~+~+++~+++~+~++~~~~
-~++~++~+++~~+++++~~+
-~+~+++++++++++~+++~+
-~+~+~+++++~++++~+++~
-+++~++~++++~++~+~~++
+<br>
+<!--<button onclick="draw()">Draw!!</button>-->
+<button id="ma" onclick="mapgenerator()">GenerateMap!</button>
+<button id="cl" onclick="clearcanvas()">clear!</button>
+<button id="ex" onclick="explode()">Explode!</button>
+<button id="ed" onclick="editmap()">Show//Hide Map</button>
+<!--<button onclick="reset()">reset!</button>-->
+<br>
+<textarea id="textarea_push" rows="10" cols="45" style="display:none">
+Generate plz.
 </textarea> 
 </div>
 <div class="col">
-<br><br><br><br><br><br>
-<canvas id="canvas" width="600" height="800">
+
+<br><br><br><br>
+
+<canvas id="canvas" width="600" height="700">
 An alternative text describing what your canvas displays. 
 </canvas> 
 
@@ -63,19 +63,10 @@ An alternative text describing what your canvas displays.
 </div>
 </div>
 
-<!--stack link for container. i used aditya's code: https://stackoverflow.com/questions/46996809/how-to-display-two-columns-in-html/46996991 -->
-<!--INSTRUCTIONS A '#' is an asteroid.
-A '.' is empty space.
-
-Create a string//matrix, Example:
-
-
-
-this is a R4 x C5 matrix string.
-Also Enter The Correct number for rows and columns in the forms above, so the computer can understand the matrix correctly, and enjoy.-->
-<!--button onclick="PushAsteroidString()">Push Asteroid String</button>	<br><br>-->
 
 
 <!--<script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>-->
 <script src="js/aocsteroids.js"></script>
 </body>
+<!--stack link for container. i used aditya's code: https://stackoverflow.com/questions/46996809/how-to-display-two-columns-in-html/46996991 -->
+<!--INSTRUCTIONS A '#' is an asteroid.

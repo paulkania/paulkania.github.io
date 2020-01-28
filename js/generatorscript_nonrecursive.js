@@ -2,7 +2,7 @@ window.onload = function() {
     ResetMorsels()
 };
 
-  var morsels_strings = ['1/5doughnuts from whom?', '2/5blockstream&trgr8', '3/5af_indeed.', '4/5we have 2 geraniums', '5/5dioptic lenses'];
+  var morsels_strings = ['what is with the 21 century and corn?', 'i mean i dont like corndogs, but i do like korn, dog', '..corn', 'we have 2 geraniums, their names are dolly & rupert', '1-10-11','grab a large mason jar, use it as a pee jar for a while<br> you might be surprised.'];
   var morsels_malleable = morsels_strings;
   morsels_strings.push('6/6test');
   var mouseclicks = 0; //length 5
