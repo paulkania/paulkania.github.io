@@ -104,7 +104,7 @@ function draw() {
       var canvas = document.getElementById('canvas');
       if (canvas.getContext) {
         var ctx = canvas.getContext('2d');
-        ctx.clearRect(0, 0, 150, 300);
+        ctx.clearRect(0, 0, 400, 400);
 //        var matrixlength = coltext*rowtext;
 //        var home_base_1d = home_base_1d[0];
         var index;
@@ -112,22 +112,22 @@ function draw() {
              for (let col = 0; col < coltext; col++) {
                 index = (coltext*row) +col;
                 if (data[index] != '+' && data[index] != '~'){
-                    ctx.clearRect(0, 0, 150, 300);
+                    ctx.clearRect(0, 0, 400, 400);
                     ctx.font = "40px Arial";
                     ctx.fillText("~+ only", 10, 150);
                     return}
                 if (index == indexhome){
                     ctx.fillStyle = 'purple'; //asteroid-blue
-                    ctx.fillRect(col*30, row*30, 30, 30);
+                    ctx.fillRect(col*20, row*20, 20, 20);
                     continue;
                     }
                 if (data[index] == '+') {
                     ctx.fillStyle = 'orange'; //asteroid-blue
-                    ctx.fillRect(col*30, row*30, 30, 30);
+                    ctx.fillRect(col*20, row*20, 20, 20);
                     }
                 else if (data[index] == '~') {
-                    ctx.fillStyle = 'grey'; //spacey-white
-                    ctx.fillRect(col*30, row*30, 30, 30);
+                    ctx.fillStyle = 'black'; //spacey-white
+                    ctx.fillRect(col*20, row*20, 20, 20);
                     }
                 }
                }
@@ -146,17 +146,18 @@ function explode() {
 //    console.log('pre',mutuable_shoot_array);
     var mutuable_shoot_array = shoot_array;
     var next;
+//Jonas Wilms @ https://stackoverflow.com/questions/3583724/how-do-i-add-a-delay-in-a-javascript-loop
 async function load () {
     while (mutuable_shoot_array.length) {
         next = mutuable_shoot_array.shift()
         var canvas = document.getElementById('canvas');
         if (canvas.getContext) {
             var ctx = canvas.getContext('2d');
-            ctx.fillStyle = 'black'; //asteroid-blue
-            ctx.fillRect(next[0]*30, next[1]*30, 30, 30);
+            ctx.fillStyle = 'grey'; //asteroid-blue
+            ctx.fillRect(next[0]*20, next[1]*20, 20, 20);
 //            console.log('next',next,next[0],next[1])
 //            console.log('post',mutuable_shoot_array);
-            await timer(300);
+            await timer(150);
             }
         }
     }
