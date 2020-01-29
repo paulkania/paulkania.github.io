@@ -1,14 +1,6 @@
 name: Paul Kania's Wonderful Book Emporium
 markdown: kramdown
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-theme: minimal-mistakes-jekyll
-
-=======
->>>>>>> parent of 753a61b... https://github.com/jameshamann/jekyll-material-theme installed
-=======
->>>>>>> parent of 753a61b... https://github.com/jameshamann/jekyll-material-theme installed
 sass:
   sass_dir: /_sass
   style: compact
