@@ -9,12 +9,17 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 4.0.0"
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 #theme
 #gem "minimal-mistakes-jekyll"
 gem "minima", "~> 2.5"
 
 
+=======
+# This is the default theme for new Jekyll sites. You may change this to anything you like.
+gem "minima", "~> 2.5"
+>>>>>>> parent of 753a61b... https://github.com/jameshamann/jekyll-material-theme installed
 =======
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.5"
