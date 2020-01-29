@@ -3,14 +3,14 @@
 //};
 //
 //function information(){
-<<<<<<< HEAD
-//window.alert(`Hello rld!`);
-=======
-//window.alert(`hi wrld`);
->>>>>>> c08cf4d25d2ad369d20b749dd54b199fade45c80
-//}
+
 
 //adding to the list also resets the list so that you can see it in the changed text
+
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
 
 function GetUserData() {
     const rowtext = parseInt(document.getElementById("row_asteroid").value);
