@@ -1,8 +1,7 @@
-//window.onload = function() {
-//    information();
-//};
-//
-//function information(){
+window.onload = function() {
+    show_hide_instructions();
+};
+
 
 
 //adding to the list also resets the list so that you can see it in the changed text
@@ -176,6 +175,23 @@ function editmap() {
         return
        }
     }
+
+var show_hide_instructions_bool = false;
+function show_hide_instructions() {
+    if (show_hide_instructions_bool == true){
+        document.getElementById("img_instr").style="display:inline";
+//        document.getElementById("img_instr").value="pizza";
+        show_hide_instructions_bool = false;
+        return
+        }
+    else if (show_hide_instructions_bool == false){
+        document.getElementById("img_instr").style="display:none";
+//        document.getElementById("real_instructions").value="fries";
+        show_hide_instructions_bool = true;
+        return
+       }
+    }
+
 
 //Disable-Enablge Buttons
 function disable_buttons(){

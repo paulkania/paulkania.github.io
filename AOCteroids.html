@@ -41,22 +41,27 @@ title: Paul Kania @ Asteroids
 <label for="asteroid_stop">Stop @ Which Asteroid?:</label>
 <input type="text" id="asteroid_stop" name="asteroid_stop" value =12 required
        minlength="1" maxlength="3" size="1">
-<br>
+
 <br>
 <!--<button onclick="draw()">Draw!!</button>-->
-<button id="ma" onclick="mapgenerator()">GenerateMap!</button>
-<button id="cl" onclick="clearcanvas()">clear!</button>
+<button id="real_instructions" onclick="show_hide_instructions()">Instructions</button>
+        <br>
+<button id="ma" onclick="mapgenerator()">Generate Map!</button>
+<!-- <button id="cl" onclick="clearcanvas()">clear!</button>-->
 <button id="ex" onclick="explode()">Explode!</button>
-<button id="ed" onclick="editmap()">Show//Hide Map</button>
+<button id="ed" onclick="editmap()">Customize Map</button>
 <!--<button onclick="reset()">reset!</button>-->
 <br>
-<textarea id="textarea_push" rows="10" cols="45" style="display:none">
+<img id="img_instr" src="/assets/bs_wiz.png" alt="Instructions image">
+<br>
+    <textarea id="textarea_push" rows="10" cols="45" style="display:none">
+
 Generate plz.
 </textarea> 
 </div>
 <div class="col">
 
-<br><br><br><br>
+<br><br>
 
 <canvas id="canvas" width="600" height="700">
 An alternative text describing what your canvas displays. 

@@ -2,7 +2,7 @@ window.onload = function() {
     ResetMorsels()
 };
 
-  var morsels_strings = ['what is with the 21 century and corn?', 'i mean i dont like corndogs, but i do like korn, dog', '..corn', 'we have 2 geraniums, their names are dolly & rupert', '1-10-11','grab a large mason jar, use it as a pee jar for a while<br> you might be surprised.'];
+  var morsels_strings = ['what is with the 21 century and corn?', 'i mean i dont like corndogs, but i do like korn, dog', '..corn', 'we have 2 geraniums', '1227 3E99 7821 24F6 92E9  BCBD B0FD D28D FEE8 D3FC','grab a large mason jar, use it as a pee jar for a while<br> you might be surprised what you will find.'];
   var morsels_malleable = morsels_strings;
   morsels_strings.push('6/6test');
   var mouseclicks = 0; //length 5
