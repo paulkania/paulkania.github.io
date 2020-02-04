@@ -6,7 +6,7 @@ permalink: /blockstream/
 <h2>{{ page.title }}</h2>
 
 
-[![alttext_meaningless_butcantbeempty_except_mb_accesibility](/assets/bs_wiz.png)](https://twitter.com/BlockstreamTeam)
+<img src="/assets/bs_wiz.png" alt="bstream wizard photo" width="20" height="400">
 
 
 You Can Check out the Bot [Here](https://twitter.com/BlockstreamTeam), or click on the avatar.	
