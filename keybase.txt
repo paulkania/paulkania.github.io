@@ -1,1 +1,56 @@
-does this need something specific in it?
+==================================================================
+https://keybase.io/pkania
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://paulkania.github.io
+  * I am pkania (https://keybase.io/pkania) on keybase.
+  * I have a public key ASDdihlgOo5aYgxGulS1YqRJHjhOx9O3qg9hmWlHtNRhpAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120dd8a19603a8e5a620c46ba54b562a4491e384ec7d3b7aa0f61996947b4d461a40a",
+      "host": "keybase.io",
+      "kid": "0120dd8a19603a8e5a620c46ba54b562a4491e384ec7d3b7aa0f61996947b4d461a40a",
+      "uid": "b7cc1b25ded3152bfdad067a7479f619",
+      "username": "pkania"
+    },
+    "merkle_root": {
+      "ctime": 1580840300,
+      "hash": "9a1dc5affc6916f5a55a5c7c61409b51df741f046e1c04888948494ffc837354a4093e7fd52f13010d74f17a862b6bb4499395e9b260145abac7d9ed91da2e3f",
+      "hash_meta": "98aa468aff48ca6134d0203f9fe4888ffd6121d546e0f994424402990a1b8a57",
+      "seqno": 14486612
+    },
+    "service": {
+      "entropy": "DZ4LIXmDAoVuQgAnpWITf7ER",
+      "hostname": "paulkania.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.2.0"
+  },
+  "ctime": 1580840321,
+  "expire_in": 504576000,
+  "prev": "64063f0f42397a5298ec6567bec3631150cc6b555d63c57666ca46d325c49131",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg3YoZYDqOWmIMRrpUtWKkSR44TsfTt6oPYZlpR7TUYaQKp3BheWxvYWTESpcCBsQgZAY/D0I5elKY7GVnvsNjEVDMa1VdY8V2ZspG0yXEkTHEICydQq70xHshWC5bcGQGQg6GkJYQ/3tnFEedQmKQzPGnAgHCo3NpZ8RAmQ53PB/wvY73HWOnDeZJpxkHj4HA3mDid7qUMBnO7ZQ6jQEO8rN/Bsf518WBnHHRixzfBxYBVtV/lX94wO3hD6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIAWXoqvEL6VyBmxpuzh5W058yTv/1/8uQuQFlgIgU2i5o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/pkania
+
+==================================================================
