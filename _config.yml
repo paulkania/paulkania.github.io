@@ -1,6 +1,13 @@
 name: Paul Kania's Wonderful Book Emporium
 markdown: kramdown
 
-sass:
-  sass_dir: /_sass
-  style: compact
+collections:
+  projects:
+    output: true
+
+
+collections_dir: collections
+
+#sass:
+#  sass_dir: /_sass
+#  style: compact

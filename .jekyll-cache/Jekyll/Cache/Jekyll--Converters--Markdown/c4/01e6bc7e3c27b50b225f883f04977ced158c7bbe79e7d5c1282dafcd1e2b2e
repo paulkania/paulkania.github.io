@@ -1,0 +1,30 @@
+I"�<h3 id="goals">Goals:</h3>
+<ul>
+  <li>class=”crossout” Get Hands Dirty With CSS -&gt; successful grid. Responsive design. Looks good on mobile.</li>
+  <li>Route some LN payments, get some more channels open.</li>
+  <li>dont get too obsessed with goals. read slashdot and follow rabbit-holes.
+<br />
+<br />
+<!-- this next empty line needed for correct katakana bullets--></li>
+</ul>
+
+<h3 id="review">Review:</h3>
+<ul>
+  <li>McHacks was fun. Met an SRE from google.</li>
+  <li>Stopped thinking about the web-dev position at blockstream, though here I am, funded channels, and working on my site. I’ll probably apply soon.</li>
+  <li>I learnt about JSON escaping while setting up Ride-The-Lightning, and talked to <a href="https://twitter.com/Suheb__"> @Suheb__</a> about it.</li>
+  <li>Made my first LND payment. It was for 0.001 cents, so I better start looking for work.</li>
+  <li>I learnt about JSON escape characters. ‘\\’</li>
+  <li>I finally got my hands a little dirty with CSS, and hopefully I keep working at that.</li>
+  <li>Not restarting a localhost after making a  Δ Δ Δ to the config cost me an extra hour or so.</li>
+  <li>Succeeeded in my <a href="https://github.com/bcongdon/awesome-lightning-network/pull/60"> Very First PR</a>, however trivial and submitted my <a href="https://github.com/Ride-The-Lightning/RTL/issues/252"> Very First Issue.</a>
+<br />
+<br /> 
+<!-- this next empty line needed for correct katakana bullets--></li>
+</ul>
+
+<h3 id="things-i-read">Things I Read:</h3>
+<ul>
+  <li><a href="https://twitter.com/eevee"> @Eevee’s </a> incredibly readible and fun post on the <a href="https://eev.ee/media/2020-02-css/thumbnail-grids.html"> history of CSS,</a> and where we are today.</li>
+</ul>
+:ET

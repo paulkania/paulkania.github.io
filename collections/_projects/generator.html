@@ -1,0 +1,27 @@
+---
+layout: default
+title: Pre-Populated Notepad
+date: 2020-01-10
+
+---
+<body>
+<h2>{{ page.title }}</h2>
+<br><br>
+
+<p id="ephemeral_line" > Click Next Text..</p>
+<br>
+<!--<p id="morsels_length">morsel_array_length</p>-->
+
+
+<button onclick="ChangeMorsel()">Next Text</button>	<br><br>
+<button onclick="ResetMorsels()">Reset Text</button>	<br><br>
+<button onclick="PushNewItemWithReset()">Add To The List And Reset</button>
+<button onclick="PushNewItemNoReset()">Add To The List No Reset</button><br><br>
+<textarea id="to_push" rows="8" cols="42">
+Add Whatever It Is You want, then add it to the list (button), from there, you can cycle through The list, you'll find your added text. You can clear the list as well and start fresh.
+</textarea><br>
+<button onclick="ClearList()">Clear The List</button><br><br>
+
+
+<script src="js/generatorscript_nonrecursive.js"></script>
+</body>

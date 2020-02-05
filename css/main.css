@@ -1,156 +1,103 @@
-#ephemeral_line {
-min-height: 10.0em;	
-/*position: relative; && padding: 30px;were used and discarded*/
+* {
+/*list-style: katakana;*/
 }
 
-/* Popup container */
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
+/* all unordered list entries */
+ul li {
+    list-style: katakana;/* the 'general'/'default' settings */
 }
 
-/* The actual popup (appears on top) */
-.popup .popuptext {
-  visibility: hidden;
-  width: 160px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
+/* works with any <crx>...</crx/>. crx short for crossout */
+/*NOT COMMONLY SUPPORTED - Shorthandtext-decoration: underline solid blue 1px;*/
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-thickness*/
+crx {
+    text-decoration-line: line-through;
+    text-decoration-style: solid;
+    text-decoration-color: green;
+    /*not supported text-decoration-thickness: 5; */
 }
 
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
+/*short for washout*/
+wsh {
+  1px 0px 9px #ffffff
 }
 
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s
+/* all unordered nested list entries */
+ul li ul li {
+    list-style: khmer;
 }
 
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+body {
+  background: #0D0208; /*337 x 5*/
+  color: #bbb;
+  font-family: "Source Code Pro", monospace;
+  text-shadow: 0 0 0px #000;
+  font-size: 14pt;
+  min-width: 60em;
 }
 
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
-
-
-
-div#wrapperHeader div#header {
- width:500px;
- height:300px;
- margin:0 auto;
-}
-
-div#wrapperHeader div#header img {
- width:; /* the width of the logo image */
- height:; /* the height of the logo image */
- margin:0 auto;
-}
-
-* { /* '*' selects ALL elements */
-	box-sizing: border-box;
-}
 figure {
 	padding: 0 1em;
 	max-width: 33em;
 }
 img {
 	display: block;
-	width: 100%;
-}
-
-
-
-
-/*above paul below preset*/
-
-.shadow {
-
-
-}
-
-body {
-  background: #0f0f23; /*337 x 5*/
-  color: #ffffff;
-  font-family: "Source Code Pro", monospace;
-  text-shadow: 1 1 3px #ffffff;
-  font-size: 14pt;
-  min-width: 60em;
-}
-/*
-body {
-	background-color: #d3d3d3;
-    margin: 60px auto;
-    width: 80%;
-    font-size: 1.25em;
-}
-*/
-nav ul, footer ul {
+    }
+/* Controls nav unordered lists (read: navar) and footer)*/
+nav ul{
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
-    list-style: none;
     font-weight: bold;
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+nav ul a, footer a{
+    color: #00810F;
 }
+
+
+
+/*Controls the navigation bar style*/
+nav ul li{
+    display: inline;
+    margin-right: 35px;
+}
+
+
 a {
     text-decoration: none;
-    color: #008F11;
+    color: #00B12D;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: line-through blue;
+}
+/*this may require livesite to test, due to caching.*/
+a:visited {
+    /*color: green;*/
+    text-decoration: line-through green;
 }
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 
-/*
 p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
 }
-*/
+
 footer {
     border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    font-size: .75em;
 }
 header {
-    border-bottom: 5px solid #d5d5d5;
+    border-bottom: 4px solid #d5d5d5;
+    font-size: 1.1em;
 }
 
 
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
+    list-style: circle;
 }
 
 ul.posts li {
-    list-style: none;
+    list-style: square;
 }
