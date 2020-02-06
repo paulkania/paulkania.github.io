@@ -1,0 +1,44 @@
+I"�<h3 id="goals">Goals:</h3>
+<ul>
+  <li>
+    <crx> Get Hands Dirty With CSS -&gt; successful grid. Responsive design. Looks good on mobile.</crx>
+    <ul>
+      <li>Make  Pretty showcase for your C++ balls game. Using grids.</li>
+    </ul>
+  </li>
+  <li>
+    <wsh>Route some LN payments, get some more channels open.</wsh>
+  </li>
+  <li>dont get too obsessed with goals. read slashdot and follow rabbit-holes.
+<br />
+<br />
+<!-- this next empty line needed for correct katakana bullets--></li>
+</ul>
+
+<h3 id="review">Review:</h3>
+<ul>
+  <li>McHacks was fun. Met an SRE from google.</li>
+  <li>Stopped thinking about the web-dev position at blockstream, though here I am, funded channels, and working on my site. I’ll probably apply soon.</li>
+  <li>I learnt about JSON escaping while setting up Ride-The-Lightning, and talked to <a href="https://twitter.com/Suheb__"> @Suheb__</a> about it.</li>
+  <li>Made my first LND payment. It was for 0.001 cents, so I better start looking for work.</li>
+  <li>I learnt about JSON escape characters. ‘\\’</li>
+  <li>I finally got my hands a little dirty with CSS, and hopefully I keep working at that.</li>
+  <li>Not restarting a localhost after making a  Δ Δ Δ to the config cost me an extra hour or so.</li>
+  <li>I learnt about git-bisect. thanks discord blog!</li>
+  <li>Succeeeded in my <a href="https://github.com/bcongdon/awesome-lightning-network/pull/60"> Very First PR</a>, however trivial and submitted my <a href="https://github.com/Ride-The-Lightning/RTL/issues/252"> Very First Issue.</a></li>
+  <li>Rediscovered some sweet nostalgia-poison. <a href="https://en.wikipedia.org/wiki/JumpStart_Adventures_3rd_Grade:_Mystery_Mountain">JumpStart 3rd Grade.</a> Oh lord.
+<br />
+<br /> 
+<!-- this next empty line needed for correct katakana bullets--></li>
+</ul>
+
+<h3 id="things-i-read">Things I Read:</h3>
+<ul>
+  <li><a href="https://twitter.com/eevee"> @Eevee’s </a> incredibly readible and fun post on the <a href="https://eev.ee/media/2020-02-css/thumbnail-grids.html"> history of CSS,</a> and where we are today.</li>
+  <li><a href="http://paulgraham.com/noob.html"> Paul Graham: the feeling of being a noob</a> is inversely correlated with actual ignorance. 💣💣</li>
+  <li><a href="https://blog.discordapp.com/why-discord-is-switching-from-go-to-rust-a190bbca2b1f">Discord, Read States, Switching From Go 2 Rust</a> - Although the title of the article is a bit of an overstatement (they are changing parts of the codebase, not a jump ship), it was nonethelesss an amazing article. 2am me was jaw-slacked. 250+million users, 50 employee. paging ben congdon! rust is maturing!</li>
+  <li><a href="https://blog.cleancoder.com/uncle-bob/2019/11/08/OpenLetterLinuxFoundation.html">Uncle Bob On Avoiding pitchfork drama on the protocol level- Letter to the Linux Foundation</a> - I don’t know a thing about Max Wood. But I don’t think it matters, as Bob’s arguments are case-unspecific.</li>
+  <li><a href="https://medium.com/@eatinginmycar/the-app-that-disrupted-the-iowa-caucuses-4bd98e3c23e0">Iowa App - Shadow Inc &amp; How to Fail Upwards by @eatinginmycar</a> - App used by Iowa Caucus Chairs (not the chairs but the people in them) - made poorly. Closed-loop hiring (priv-pub), Closed-sourced thinking. Guv as expected.</li>
+  <li><a href="https://overreacted.io/my-decade-in-review/">Dan Abramov’s Decade In Review</a> Fun story. I like journal-ly posts. Probably because it’s light.</li>
+</ul>
+:ET

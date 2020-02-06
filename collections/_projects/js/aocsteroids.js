@@ -1,15 +1,16 @@
 window.onload = function() {
-    show_hide_instructions();
+    //show_hide_instructions();
+    mapgenerator();
 };
 
 
 
 //adding to the list also resets the list so that you can see it in the changed text
 
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
+//function myFunction() {
+//  var popup = document.getElementById("myPopup");
+//  popup.classList.toggle("show");
+//}
 
 function GetUserData() {
     const rowtext = parseInt(document.getElementById("row_asteroid").value);

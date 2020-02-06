@@ -14,7 +14,7 @@ crx {
     text-decoration-line: line-through;
     text-decoration-style: solid;
     text-decoration-color: green;
-    /*not supported text-decoration-thickness: 5; */
+    /*not supported - text-decoration-thickness: 5; */
 }
 
 /*short for washout*/
@@ -34,6 +34,7 @@ body {
   text-shadow: 0 0 0px #000;
   font-size: 14pt;
   min-width: 60em;
+  min-height: 100%; /*body takes at least a whole page, pushing footer down.*/
 }
 
 figure {
@@ -49,6 +50,8 @@ nav ul{
     padding: 0px;
     font-weight: bold;
 }
+
+/*change color of header and footer hyperlinks*/
 nav ul a, footer a{
     color: #00810F;
 }
@@ -85,6 +88,10 @@ p {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .75em;
+    clear: both;
+    position: relative;
+    height: 200px;
+    /*margin-top: -200px;*/
 }
 header {
     border-bottom: 4px solid #d5d5d5;
