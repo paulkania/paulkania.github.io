@@ -2,6 +2,7 @@
 	<html lang="en">
 		<head>
 			<link rel="stylesheet" type="text/css" href="/css/grid.css">
+
 			<!--Font Awesome-->
 			<script src="https://kit.fontawesome.com/423ddacc30.js" crossorigin="anonymous"></script>
 			<!-- Bootstrap required meta-tabs			-->
@@ -57,7 +58,6 @@
 		  </div>
 		</nav>
 		<!--navbar End-->
-
 			<div class="container">
 			{{ content }}
 
@@ -68,6 +68,16 @@
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		</body>
 <footer>
-	<p> That's It.  <a href="https://www.youtube.com/watch?v=nhB06T77QPQ" rel="prefetch"> Show's Over.</a> </p>
+<p class="time"></p>
 </footer>
+<script>
+function telltime(){
+	var query = document.querySelector(".time");
+	var update = new Date('06 February 2020');
+	var now = new Date();
+	var diff = Math.floor(((now-update).toString())/86400000);
+	query.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updated " + diff +" days ago."
+}
+telltime();
+</script>
 	</html>
