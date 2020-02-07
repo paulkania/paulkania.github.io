@@ -1,0 +1,18 @@
+<!--<script src="time.js"></script>-->
+
+
+
+<div class="paul">
+</div>
+
+
+<script>
+function telltime(){
+    var logelem = document.querySelector(".paul");
+    var update = new Date('06 February 2020');
+    var now = new Date();
+    var diff = Math.floor(((now-update).toString())/86400000);
+    logelem.innerHTML = diff;
+   }
+telltime();
+</script>
