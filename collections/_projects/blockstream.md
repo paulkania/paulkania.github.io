@@ -7,7 +7,7 @@ date: 2020-01-20
 <h2>{{ page.title }}</h2>
 
 
-<img src="/assets/bs_wiz.png" alt="bstream wizard photo">
+<img src="/assets/bs_wiz.png" alt="bstream wizard photo" height="300">
 
 
 You Can Check out the Bot [Here](https://twitter.com/BlockstreamTeam), or click on the avatar.	

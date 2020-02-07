@@ -3,26 +3,52 @@
 /*list-style: katakana;*/
 }
 
-japan ul li {
-    list-style: katakana;/* the 'general'/'default' settings */
+ul.japan {
+list-style: katakana;
+}
+
+a {
+color:#d0c6d9
 }
 
 :root {
    font-size: 16pt;
 }
 
-header {
-    border-bottom: 4px solid #d5d5d5;
-    font-size: 1.1em;
+/*AOCsteroids customize map sizer*/
+#textarea_push {
+width:105%
+/*padding: 1px;*/
 }
 
+/*before and after trial START*/
+.dignifier{
+   margin: 1em 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+/*before and after trial START*/
+
+
+/*FOOTER START*/
 footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .75em;
-    clear: both;
+    border-top: 2px solid #d5d5d5;
+    font-size: .8em;
+    clear: both; /**/
     height: 200px;
-    position: relative;
+    position: relative; /*relative -> line goes to end. absolute line ends when text ends*/
     /*margin-top: -200px;*/
+}
+footer a{
+    color: #d0c6d9F;
+}
+/*FOOTER END*/
+
+#canvas{
+width: 100%;
+height: 100%;
 }
 
 main{
@@ -31,36 +57,29 @@ main{
 }
 
 body {
-    background: grey;
+    background: #e5e5e5;
+    font-family: "Source Code Pro", monospace;
 }
 
-/*body style*/
+/*GENERAL body style start*/
 crx {
     text-decoration-line: line-through;
     text-decoration-style: solid;
-    text-decoration-color: green;
+    text-decoration-color: #d0c6d9;
     /*not supported - text-decoration-thickness: 5; */
 }
-
-/* Controls nav unordered lists (read: navar) and footer)
-nav ul{
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    font-weight: bold;
+a:hover {
+    text-decoration: line-through blue;
 }
-*/
+/*this may require livesite to test, due to caching.*/
+a:visited {
+    /*color: green;*/
+    text-decoration: line-through green;
+/*GENERAL body style END*/
+
 
 /*change color of header and footer hyperlinks*/
-footer a{
-    color: #00810F;
-}
 
-/*Controls the navigation bar style
-nav ul li{
-    display: inline;
-    margin-right: 35px;
-}
-*/
 
 .mygrid {
 
@@ -79,12 +98,13 @@ nav ul li{
 }
 
 .mygrid li {
-    padding: 10px;
+    padding: 0px;
     text-align: center;
     border: none
-    background: #f4f4f4;
+    /*background: #000;*/
 }
 
 .mygrid img {
     max-width: 100%;
+    height: auto;
 }
