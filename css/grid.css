@@ -3,12 +3,12 @@
 /*list-style: katakana;*/
 }
 
-ul.japan {
+.dignifier {
 list-style: katakana;
 }
 
 a {
-color:#d0c6d9
+color:#b0a6b9
 }
 
 :root {
@@ -21,20 +21,15 @@ width:105%
 /*padding: 1px;*/
 }
 
-/*before and after trial START*/
-.dignifier{
-   margin: 1em 0;
-    padding: 0;
-    list-style-type: none;
-}
 
+/*
 
 /*before and after trial START*/
 
 
 /*FOOTER START*/
 footer {
-    border-top: 2px solid #d5d5d5;
+    border-top: 2px solid #000;
     font-size: .8em;
     clear: both; /**/
     height: 200px;
@@ -51,10 +46,12 @@ width: 100%;
 height: 100%;
 }
 
+
 main{
-    width: 80%;
+    width: 90%;
     margin: 2em auto;
 }
+
 
 body {
     background: #e5e5e5;
@@ -82,15 +79,14 @@ a:visited {
 
 
 .mygrid {
-
+    /* Override some default browser styles */
     margin: 1em 0;
     padding: 0;
     list-style: none;
 
     display:grid;
     grid: auto-flow / repeat(auto-fit,minmax(200px,1fr));
-    /*grid-template-columns: 1fr 1fr;*/
-    /*grid-template-rows: 1fr 1fr;*/
+    align-items: baseline;
 
     /*gap == grid-gap. grid-gap being deprecated */
     grid-gap: 10px;
@@ -98,13 +94,12 @@ a:visited {
 }
 
 .mygrid li {
-    padding: 0px;
+    padding: 5px;
     text-align: center;
-    border: none
+    border: 1px solid #e8e8e8;
     /*background: #000;*/
 }
 
 .mygrid img {
     max-width: 100%;
-    height: auto;
 }
