@@ -1,6 +1,5 @@
 /*universal selector */
 * {
-/*list-style: katakana;*/
 }
 
 .dignifier {
@@ -21,8 +20,6 @@ width:105%
 /*padding: 1px;*/
 }
 
-
-/*
 
 /*before and after trial START*/
 
@@ -55,7 +52,7 @@ main{
 
 
 body {
-    background: #d5d5d5;
+    background-color: #e1e1d1   !important;
     font-family: "Source Code Pro", monospace;
 }
 

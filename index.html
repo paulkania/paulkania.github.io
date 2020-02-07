@@ -28,7 +28,7 @@ main{
 }
 
 body {
-    background: grey;
+    background: #f0ead6;
 }
 
 /* Controls nav unordered lists (read: navar) and footer)*/
@@ -52,7 +52,7 @@ nav ul li{
 .mygrid {
 
     margin: 1em 0;
-    padding: 25px;
+    padding: 2px;
     list-style: none;
 
     display:grid;
@@ -69,7 +69,7 @@ nav ul li{
     padding: 10px;
     text-align: left;
     border: none
-    background: #f4f4f4;
+    background: #blue;
 }
 
 .mygrid img {
@@ -90,28 +90,36 @@ align-items: baseline;
 
 }
 
+
+
 </style>
 <ul class="mygrid">
     <li>
-    <img src="/assets/front.jpg" width="450">
+    <div class="headshot col-md-6 col-xs-12 vert-align "><img src="/assets/front.jpg" class="img-responsive img-profile center-block" alt="Profile"></div>
     </li>
-<!--</ul>-->
-<!--<ul class="mygrid">-->
-    <ul class="list-group">
-        <li class="list-group-item">
-            <a href="https://keybase.io/pkania" target="_blank"  >&nbsp;Keybase&#8198;</a></li>
-        <li class="list-group-item">
-            <a href="mailto:p.rozehnal@gmail.com?subject=I really want to hire you&body=the best i can do is 200k a month." target="_blank" rel="noopener noreferrer">&nbsp;Gmail&#8198;&#8198;&#8198;</a></li>
-        <li class="list-group-item">
-            <a href="https://twitter.com/BlockstreamTeam" target="_blank">&nbsp;Twitter&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-        <li class="list-group-item">
-            <a href="https://github.com/PaulKania" target="_blank">&nbsp;Github&#8239;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-    <li class="list-group-item">
-        <a href="/lnd.html" target="_blank">&nbsp;Lightning &nbsp;</a></li>
-    </ul>
-<!--</ul>-->
 </ul>
-
-
-
+<div class="col-md-6 col col-xs-12 vert-align hor-align">
+    <div class="btn-group social-media-buttons">
+        <a href="https://keybase.io/pkania" target="_blank"  >
+            <button class="btn btn-sm btn-default" type="button">
+                <i class="fab fa-keybase fa-2x"></i>
+            </button></a>
+        <a href="mailto:p.rozehnal@gmail.com?subject=I really want to hire you&body=the best i can do is 200k a month." target="_blank" rel="noopener noreferrer">
+            <button class="btn btn-sm btn-default" type="button">
+                <i class="far fa-envelope-open fa-2x"></i>
+            </i></button></a>
+        <a href="https://twitter.com/BlockstreamTeam" target="_blank">
+            <button class="btn btn-sm btn-default" type="button">
+                <i class="fab fa-twitter fa-2x"></i>
+            </i></button></a>
+        <a href="https://github.com/PaulKania" target="_blank">
+            <button class="btn btn-sm btn-default" type="button">
+                <i class="fab fa-github fa-2x"></i>
+            </i></button></a>
+        <a href="/lnd.html" target="_blank">
+            <button class="btn btn-sm btn-default" type="button">
+                <i class="fas fa-bolt fa-2x"></i>
+            </i></button></a>
+    </div>
+</div>
 </body>
