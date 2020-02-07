@@ -29,15 +29,16 @@ width:105%
 
 /*FOOTER START*/
 footer {
-    border-top: 2px solid #000;
-    font-size: .8em;
-    clear: both; /**/
+    border-top: 1px solid #d5d5d5;
+    font-size: .75em;
+    clear: both;
     height: 200px;
-    position: relative; /*relative -> line goes to end. absolute line ends when text ends*/
+    position: relative;
     /*margin-top: -200px;*/
 }
+
 footer a{
-    color: #d0c6d9F;
+    color: #a5a5a5;
 }
 /*FOOTER END*/
 
@@ -54,7 +55,7 @@ main{
 
 
 body {
-    background: #e5e5e5;
+    background: #d5d5d5;
     font-family: "Source Code Pro", monospace;
 }
 
@@ -70,8 +71,8 @@ a:hover {
 }
 /*this may require livesite to test, due to caching.*/
 a:visited {
-    /*color: green;*/
-    text-decoration: line-through green;
+    font-style: italic;
+    /*text-decoration: line-through green;*/
 /*GENERAL body style END*/
 
 

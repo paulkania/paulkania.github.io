@@ -4,9 +4,44 @@ layout: default
 
 <body>
 	<main>
+		<style>
+.mygrid {
+
+    margin: 1em 0;
+    padding: 0;
+    list-style: none;
+
+    display:grid;
+    grid: auto-flow / repeat(auto-fit,minmax(200px,1fr));
+    /*grid-template-columns: 1fr 1fr;*/
+    /*grid-template-rows: 1fr 1fr;*/
+
+    /*gap == grid-gap. grid-gap being deprecated */
+    grid-gap: 10px;
+    gap: 10px;
+}
+
+.mygrid li {
+    padding: 10px;
+    text-align: center;
+    border: none
+    background: #f4f4f4;
+}
+
+.mygrid img {
+    max-width: 100%;
+}
+ul {
+display: none;
+paddint: 0px
+}
+li {
+display: list-item;
+}
+</style>
 		<ul class="mygrid">
 			<li>
-				<img src="/assets/ast_instr.png"> <br>
+				<img src="/assets/ast_instr.png">
 			<br>
 			#1  me w/ vangogh
 			</li>
