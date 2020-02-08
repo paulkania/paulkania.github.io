@@ -2,11 +2,26 @@
 * {
 }
 
-/*
-p{
-margin-bottom: 0rem !important;
+html, body {
+  height: 100%;
+  margin: 0;
 }
-*/
+.container {
+  min-height: 87.5%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -15px;
+}
+.footer, .push {
+  height: 15px;
+}
+
+
+.time{
+font-size: 0.55rem;
+}
+
 
 /*creating small separation between navbar and text.*/
 ul {
