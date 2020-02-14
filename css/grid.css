@@ -2,6 +2,10 @@
 * {
 }
 
+::selection {
+background: #FFFFC1;
+}
+
 html, body {
   height: 100%;
   margin: 0;
