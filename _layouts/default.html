@@ -80,11 +80,13 @@
 <script>
 function telltime(){
 	var query = document.querySelector(".time");
-	var update = new Date('12 February 2020'); <!--CHANGE IT UP HERE-->
+	var update = new Date('15 February 2020'); <!--CHANGE IT UP HERE-->
+	var birth = new Date('14 August 1992'); <!-- Don't Change, or you're a liar-->
 	var now = new Date();
 	var diff = Math.floor(((now-update).toString())/86400000);
-	if (diff ==1) {query.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Site Updated " + diff +" day ago."}
-	else {query.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Site Updated " + diff +" days ago."}
+	var daysalive = Math.floor(((now-birth).toString())/86400000);
+	if (diff ==1) {query.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Site Updated " + diff + " day ago. " + daysalive + " days old."}
+	else {query.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Site Updated " + diff + " days ago. " + daysalive + " days old."}
 }
 telltime();
 </script>
