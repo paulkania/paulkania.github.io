@@ -85,8 +85,8 @@ function telltime(){
 	var now = new Date();
 	var diff = Math.floor(((now-update).toString())/86400000);
 	var daysalive = Math.floor(((now-birth).toString())/86400000);
-	if (diff ==1) {query.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ daysalive +"Site Updated " + diff + " day ago. "}
-	else {query.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ daysalive +"Site Updated " + diff + " days ago. "}
+	if (diff ==1) {query.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ daysalive +". Site Updated " + diff + " day ago. "}
+	else {query.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ daysalive +". Site Updated " + diff + " days ago. "}
 }
 telltime();
 </script>
