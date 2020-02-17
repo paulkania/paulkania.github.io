@@ -2,14 +2,14 @@
 * {
 }
 
-re { /* read */
-color: #00f;
-font-size: 0.85rem;
+rea { /* read */
+color: #00e;
+font-size: 0.5rem;
 }
 
 wr { /* read */
-color: #f00;
-font-size: 0.85rem;
+color: #e00;
+font-size: 0.5rem;
 }
 
 ::selection {
