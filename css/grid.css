@@ -2,6 +2,16 @@
 * {
 }
 
+re { /* read */
+color: #00f;
+font-size: 0.85rem;
+}
+
+wr { /* read */
+color: #f00;
+font-size: 0.85rem;
+}
+
 ::selection {
 background: #FFFFC1;
 }
