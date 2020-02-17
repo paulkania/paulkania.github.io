@@ -2,14 +2,10 @@
 * {
 }
 
-rea { /* read */
-color: #00e;
-font-size: 0.5rem;
-}
+h1 {
+/* use this if you have another markdown idea, cuz then u can use <<# trick>>. */ 
+/* font-size: 0.55rem; *.
 
-wr { /* read */
-color: #e00;
-font-size: 0.5rem;
 }
 
 ::selection {
