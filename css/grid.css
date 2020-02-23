@@ -2,15 +2,17 @@
 * {
 }
 
-h1 {
-/* use this if you have another markdown idea, cuz then u can use <<# trick>>. */ 
-/* font-size: 0.55rem; *.
-
-}
-
 ::selection {
-background: #FFFFC1;
+  background: black;
+  color: white;
 }
+
+h1 {
+/* use this if you have another markdown idea, cuz then u can use <<# trick>>. */
+/* font-size: 0.55rem; *.
+}
+
+
 
 html, body {
   height: 100%;
