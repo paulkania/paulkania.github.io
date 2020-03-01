@@ -1,96 +1,116 @@
- <!DOCTYPE html>
 <!DOCTYPE html>
-	<html lang="en">
-		<head>
-			<link rel="stylesheet" type="text/css" href="/css/grid.css">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159333754-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-159333754-1');
+	</script>
+	<link rel="stylesheet" type="text/css" href="/css/grid.css">
 
 
-			<!--Font Awesome-->
-			<script src="https://kit.fontawesome.com/423ddacc30.js" crossorigin="anonymous"></script>
-			<!--JQUERY - thusfar unused.-->
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!--			<script src="pixelate.min.js"></script>-->
+	<!--Font Awesome-->
+	<script src="https://kit.fontawesome.com/423ddacc30.js" crossorigin="anonymous"></script>
+	<!--JQUERY - thusfar unused.-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!--			<script src="pixelate.min.js"></script>-->
 
-			<!-- Bootstrap required meta-tabs			-->
-		 	<meta charset="utf-8">
-				<!-- Mobile First - use media queries to scale up.		-->
-			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-			<link rel="canonical" href="https://paulkania.github.io/index.html">
+	<!-- Bootstrap required meta-tabs			-->
+	<meta charset="utf-8">
+	<!-- Mobile First - use media queries to scale up.		-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="canonical" href="https://paulkania.github.io/index.html">
 
-			 <!-- Stylesheets CSS -->
-    		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Stylesheets CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
-			<!--External Tab highlight-->
-			<title>{{ page.title }}</title>
+	<!--External Tab highlight-->
+	<title>{{ page.title }}</title>
 
-			<!-- link to main stylesheet -->
+	<!-- link to main stylesheet -->
 
-<!--		FAVICON START	-->
-			<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-			<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-			<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-			<link rel="manifest" href="/favicon/site.webmanifest">
-			<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-			<meta name="msapplication-TileColor" content="#da532c">
-<!--			<meta name="theme-color" content="#ffffff">-->
-<!--		FAVICON END	-->
-		</head>
-		<body>
-		<!--navbar start-->
-		<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #b6d0ca;">
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	<!--		FAVICON START	-->
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/favicon/site.webmanifest">
+	<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<!--			<meta name="theme-color" content="#ffffff">-->
+	<!--		FAVICON END	-->
+</head>
+
+<body>
+	<!--navbar start-->
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #b6d0ca;">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+			aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			<ul class="navbar-nav mr-auto">
-			  <li class="nav-item">
-				<a class="nav-link" style="font-weight: bold;" href="/index.html"> Paul Kania</a>
-			  </li>
-			  <li class="nav-item">
-				  <a class="nav-link" href="/nb/read_write.html">Read-Write</a>
-			  <li class="nav-item">
-				  <a class="nav-link" href="/nb/projects.html">Projects</a>
-			  </li>
-			  <li class="nav-item">
-				  <a class="nav-link" href="/nb/otherblogs.html">Other People</a>
-			  </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/nb/mytools.html">Tools</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/nb/media.html">Media</a>
-        </li>
+				<li class="nav-item">
+					<a class="nav-link" style="font-weight: bold;" href="/index.html"> Paul Kania</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/nb/read_write.html">Read-Write</a>
+				<li class="nav-item">
+					<a class="nav-link" href="/nb/projects.html">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/nb/otherblogs.html">Other People</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/nb/mytools.html">Tools</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/nb/media.html">Media</a>
+				</li>
 			</ul>
-		  </div>
-		</nav>
-		<!--navbar End-->
-			<!-- individual pages go here	-->
-			<div class="container">
-			{{ content }}
-			 <div class="push"></div>
-			</div>
+		</div>
+	</nav>
+	<!--navbar End-->
+	<!-- individual pages go here	-->
+	<div class="container">
+		{{ content }}
+		<div class="push"></div>
+	</div>
 
-			<!-- Required JS scripts for bootstrap			-->
-			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!-- Required JS scripts for bootstrap			-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
 
-		</body>
+</body>
 <footer class="footer">
-<p class="time"></p>
+	<p class="time"></p>
 </footer>
 <script>
-function telltime(){
-	var query = document.querySelector(".time");
-	var update = new Date('1 March 2020'); <!--CHANGE IT UP HERE-->
+	function telltime() {
+		var query = document.querySelector(".time");
+		var update = new Date('1 March 2020'); < !--CHANGE IT UP HERE-- >
 	var now = new Date();
-  var birth = new Date('14 August 1992'); <!-- Don't Change, or you're a liar-->
-	var diff = Math.floor(((now-update).toString())/86400000);
-	var daysalive = Math.floor(((now-birth).toString())/86400000);
-	if (diff ==1) {query.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ daysalive +". Site Updated " + diff + " day ago. "}
-	else {query.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ daysalive +". Site Updated " + diff + " days ago. "}
-}
-telltime();
+		var birth = new Date('14 August 1992'); < !--Don't Change, or you're a liar-- >
+	var diff = Math.floor(((now - update).toString()) / 86400000);
+		var daysalive = Math.floor(((now - birth).toString()) / 86400000);
+		if (diff == 1) { query.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + daysalive + ". Site Updated " + diff + " day ago. " }
+		else { query.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + daysalive + ". Site Updated " + diff + " days ago. " }
+	}
+	telltime();
 </script>
-	</html>
+
+</html>
