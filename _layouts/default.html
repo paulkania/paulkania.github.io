@@ -102,11 +102,11 @@
 <script>
 	function telltime() {
 		var query = document.querySelector(".time");
-		var update = new Date('5 March 2020'); < !--CHANGE IT UP HERE-- >
-	var now = new Date();
-		var birth = new Date('14 August 1992'); < !--Don't Change, or you're a liar-- >
-	var diff = Math.floor(((now - update).toString()) / 86400000);
-		var daysalive = Math.floor(((now - birth).toString()) / 86400000);
+		var present = new Date();
+		var update = new Date('5 March 2020');
+		var birth = new Date('14 August 1992');
+		var diff = Math.floor(((present - update).toString()) / 86400000);
+		var daysalive = Math.floor(((present - birth).toString()) / 86400000);
 		if (diff == 1) { query.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + daysalive + ". Site Updated " + diff + " day ago. " }
 		else { query.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + daysalive + ". Site Updated " + diff + " days ago. " }
 	}
