@@ -4,6 +4,28 @@ layout: default
 
 <body>
 	<style>
+
+.container {
+		  position: relative;
+		  width: 50%;
+		}
+
+.text {
+		  color: white;
+		  font-size: 20px;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  -webkit-transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		  transform: translate(-50%, -50%);
+		  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: .5;
+}
+
 .mygrid {
 
     margin: 1em 0;
@@ -43,7 +65,13 @@ display: list-item;
 </style>
 		<ul class="mygrid">
 			<li>
-				<img src="/assets/ast_instr.png">
+				<div class="container">
+					<img src="/assets/ast_instr.png">
+					<div class="overlay"> </div>
+				</div>
+
+
+
 			<br>	#1  me w/ vangogh. and then a nice long run on sentence because why the heck not.
 			</li>
 			<li>
@@ -64,6 +92,13 @@ display: list-item;
 			<li>
 				<img src="/assets/bs_wiz.png">
 			<br>
+
+			<div class="container">
+			  <img src="img_avatar.png" alt="Avatar" class="image">
+			  <div class="overlay">
+			    <div class="text">Hello World</div>
+			  </div>
+			</div>
 
 <!--			</li>-->
 <!--			<li>-->
