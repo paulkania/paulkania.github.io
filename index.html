@@ -77,7 +77,13 @@ align-items: baseline;
 </style>
 <script src="/pixelize.js"></script>
 
-<div class="col-md-6 col col-xs-12 vert-align hor-align">
+<ul class="dignifier">
+  {% for i in site.projects %}
+    <li>
+      <a href="{{ i.url }}">{{ i.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
     <div class="btn-group social-media-buttons">
         <a href="mailto:p.rozehnal@gmail.com" target="_blank" rel="noopener noreferrer">
             <button class="btn btn-sm btn-default" type="button">
@@ -88,7 +94,6 @@ align-items: baseline;
                 <i class="fab fa-twitter fa-2x"></i>
             </i></button></a>
       </div>
-</div>
 <!--
 add book posts here.
 -->
