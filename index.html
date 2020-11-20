@@ -36,12 +36,12 @@ body {
     margin: 1em 0;
     padding: 2px;
     list-style: none;
-
+    
     display:grid;
     grid: auto-flow / repeat(auto-fit,minmax(200px,1fr));
     /*grid-template-columns: 1fr 1fr;*/
     /*grid-template-rows: 1fr 1fr;*/
-
+    
     /*gap == grid-gap. grid-gap being deprecated */
     grid-gap: 10px;
     gap: 10px;
@@ -57,44 +57,31 @@ body {
 .mygrid img {
     max-width: 100%;
 }
-<!--ul {-->
-<!--display: none;-->
-<!--padding: 0px-->
-<!--}-->
-<!--li {-->
-<!--display: list-item;-->
-<!--}-->
 
 .list-group{
 position:right;
 text-align: center;
 align-items: baseline;
-
 }
 
 
 
 </style>
-<script src="/pixelize.js"></script>
 
-<ul class="dignifier">
+<br><br>
+<div class="btn-group social-media-buttons">
+        <a href="mailto:p.rozehnal@gmail.com" target="_blank" rel="noopener noreferrer">
+            <button class="btn btn-sm btn-default" type="button">
+                <i class="far fa-envelope-open fa-2x"></i>
+            </i></button></a>
+      </div>
+
+<ul>
   {% for i in site.posts %}
     <li>
       <a href="{{ i.url }}">{{ i.title }}</a>
     </li>
   {% endfor %}
 </ul>
-<br><br><br>
-    <div class="btn-group social-media-buttons">
-        <a href="mailto:p.rozehnal@gmail.com" target="_blank" rel="noopener noreferrer">
-            <button class="btn btn-sm btn-default" type="button">
-                <i class="far fa-envelope-open fa-2x"></i>
-            </i></button></a>
-      </div>
-<!--
-add book posts here.
--->
-
-
-
+<br><br>
 </body>
