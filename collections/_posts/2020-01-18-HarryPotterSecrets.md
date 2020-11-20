@@ -3,6 +3,8 @@ layout: default
 title: Harry Potter Et La Chambre Des Secrets - J. K. Rowling
 ---
 
+<br>
+
 ###### Langue: Francais 
 
 ###### November 6 - 13. Consistent ~60 pages a day. 

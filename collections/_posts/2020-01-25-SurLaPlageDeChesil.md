@@ -2,7 +2,7 @@
 layout: default
 title: Sur La Plage De Chesil - Ian McEwan
 ---
-
+<br><br>
 ###### Langue: Francais -- November 14 - 19. Consistent ~20-40 pages a day. -- Medium Effort.
 
 
@@ -24,4 +24,5 @@ I look forward to reading more Ian McEwen, probably Amsterdam next, but next up 
 
 **Film Update:** I watched the film hours after I finished the book. Enough was different that the story really no longer remained the same. Superficially it did, but you simply can’t rush intrigue, detail, and the smell of starched bed sheets. The real lives of these people. But the movie tried anyway and the result was a film that came off as pretty eccentric because it tried to capture some details of the book to the letter, while A) changing various plot fundamentals and without B) taking the time that the book spends on character exposition. The film was a strange abomination of the book, but I think the effort was mostly honest. The time given to Edward’s mother was strange, while in the book, it made sense. I’ll never know what watching the film would be like without the book for context, but I imagine I would be pretty confused. Pages and pages of exposition were replaced with frantic glances and half-baked allusions to sexual prudence that never seemed like Florence’s extreme prudence, but rather a prudence of the time. Also who decided to give Florence a hippy epingle for half of the film?
 
-**French Language Experience:** I enjoyed the challenge of navigating the ambiguity of who is talking about whom. Google translate suffers from this, as you’ll see if you translate quote below. 1. Lui is always used, never elle. 2. Fr -> il a visite *sa* mere. En -> he visited *his* mom.
+**French Language Experience:** I enjoyed the challenge of navigating the ambiguity of who is talking about whom. Google translate suffers from this, as you’ll see if you translate quote below. 
+1. Lui is always used, never elle. 2. Fr -> il a visite *sa* mere. En -> he visited *his* mom.
