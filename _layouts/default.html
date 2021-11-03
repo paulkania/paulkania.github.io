@@ -58,13 +58,19 @@
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
-					<a class="nav-link" style="font-weight: bold;" href="/index.html"> Home & Books</a>
+					<a class="nav-link" style="font-weight: bold;" href="/index.html"> Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/nb/projects.html">Projects</a>
+					<a class="nav-link" href="/books.html">Books</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/nb/otherblogs.html">Other Blogs</a>
+					<a class="nav-link" href="/music.html">Music</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/film.html">Film</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/projects.html">Projects</a>
 				</li>
 			</ul>
 		</div>
@@ -95,11 +101,12 @@
 	function telltime() {
 		var query = document.querySelector(".time");
 		var present = new Date();
-		var update = new Date('30 October 2020');
+		var update = new Date('3 November 2021');
 		var birth = new Date('14 August 1992');
 		var diff = Math.floor(((present - update).toString()) / 86400000);
 		var daysalive = Math.floor(((present - birth).toString()) / 86400000);
 		if (diff == 1) { query.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + daysalive + ". Site Updated " + diff + " day ago. " }
+		if (diff == 0) {  query.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + daysalive + ". Site Updated Today." }	
 		else { query.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + daysalive + ". Site Updated " + diff + " days ago. " }
 	}
 	telltime();
