@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Harry Potter Et La Chambre Des Secrets - J. K. Rowling
+date: 2020-10-15
 ---
 
 <br>

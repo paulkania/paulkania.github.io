@@ -4,7 +4,7 @@ layout: default
 
 <body>
 <ul class="dignifier">
-  {% for i in site.film %}
+  {% for i in site.film reversed %}
     <li>
       <a href="{{ i.url }}">{{  i.date | date: '%B %Y'}} - {{ i.title }}</a>
     </li>

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Sur La Plage De Chesil - Ian McEwan
+date: 2020-11-20
 ---
 <br><br>
 ###### Langue: Francais -- November 14 - 19. Consistent ~20-40 pages a day. -- Medium Effort.

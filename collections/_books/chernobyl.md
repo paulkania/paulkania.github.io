@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Midnight in Chernobyl - Adam Higginbotham
+date: 2020-09-15
 ---
 # Midnight in Chernobyl 
 

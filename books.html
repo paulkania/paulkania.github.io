@@ -5,7 +5,7 @@ layout: default
 <body>
 <ul class="dignifier">
 <ul>
-  {% for i in site.books %}
+  {% for i in site.books reversed %}
     <li>
       <a href="{{ i.url }}">{{  i.date | date: '%B %Y'}} - {{ i.title }}</a>
     </li>
