@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Squid Games
-date: 2020-11-05
+date: 2021-11-05
 ---
 
 I think this show is popular because it rode the wave of parasite.
