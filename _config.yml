@@ -1,12 +1,12 @@
 name: Paul Kania's Wonderful Book Emporium
 markdown: kramdown
 
-
-
 collections_dir: collections
 
 collections:
-  projects:
+  nprojects:
+    output: true  
+  tprojects:
     output: true
   film:
     output: true
