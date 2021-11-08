@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<body>
+<ul class="dignifier">
+<ul>
+  {% for i in site.tprojects reversed %}
+    <li>
+      <a href="{{ i.url }}">{{  i.date | date: '%B %Y'}} - {{ i.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+</ul>
+<br>
+
+
+</body>

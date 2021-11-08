@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<body>
+<ul class="dignifier">
+<ul>
+  {% for i in site.nprojects reversed %}
+    <li>
+      <a href="{{ i.url }}">{{ i.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+</ul>
+<br>
+
