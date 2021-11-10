@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Blockstream Twitter Bot
-date: 2020-01-10
+date: 2019-12-10
 
 ---
 <h2>{{ page.title }}</h2>
