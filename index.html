@@ -69,13 +69,23 @@ align-items: baseline;
 </style>
 
 <br><br>
+	<p id = "frontpage"> </p>
 <div class="btn-group social-media-buttons">
         <a href="mailto:p.rozehnal@gmail.com" target="_blank" rel="noopener noreferrer">
             <button class="btn btn-sm btn-default" type="button">
                 <i class="far fa-envelope-open fa-2x"></i>
             </i></button></a>
+
       </div>
-A place for oversharing.
+<script>
+
+var listofsayings = ['each self is the final arbiter of truth', 'calm is a superpower', 'observe silence', 'a place for oversharing', 'church & science. theory & practice. gods & monkeys', 'do you have puzzle drive?', 'reward good work']
+
+var diceindex = Math.floor(Math.random() * listofsayings.length)
+
+document.getElementById("frontpage").innerHTML = listofsayings[diceindex];
+
+</script>
 
 <br><br>
 </body>
