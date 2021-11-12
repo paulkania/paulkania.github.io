@@ -61,7 +61,9 @@
 					<a class="nav-link" style="font-weight: bold;" href="/index.html"> Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/books.html">Books</a>
+					<a class="nav-link" href="/projects.html">Projects</a>
+				<li class="nav-item">
+					<a class="nav-link" href="/books.html">Books & Essays</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="/music.html">Music</a>
@@ -69,9 +71,7 @@
 				<li class="nav-item">
 					<a class="nav-link" href="/film.html">Film</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/projects.html">Projects</a>
-				</li>
+
 			</ul>
 		</div>
 	</nav>
@@ -101,7 +101,7 @@
 	function telltime() {
 		var query = document.querySelector(".time");
 		var present = new Date();
-		var update = new Date('3 November 2021');
+		var update = new Date('10 November 2021');
 		var birth = new Date('14 August 1992');
 		var diff = Math.floor(((present - update).toString()) / 86400000);
 		var daysalive = Math.floor(((present - birth).toString()) / 86400000);
