@@ -1,9 +1,11 @@
 ---
 layout: default
-title: Paul Kania
+title: Asteroids Game
+date: 2020-01-15
 ---
 <body>
-    <style>
+    <main>
+<style>
 :root {
    font-size: 16pt;
 }
@@ -28,20 +30,38 @@ main{
 }
 
 body {
-    background: ##fbfbfb;
+    background: grey;
+}
+
+/* Controls nav unordered lists (read: navar) and footer)*/
+nav ul{
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    font-weight: bold;
+}
+
+/*change color of header and footer hyperlinks*/
+nav ul a, footer a{
+    color: #00810F;
+}
+
+/*Controls the navigation bar style*/
+nav ul li{
+    display: inline;
+    margin-right: 35px;
 }
 
 .mygrid {
 
     margin: 1em 0;
-    padding: 2px;
+    padding: 0;
     list-style: none;
-    
+
     display:grid;
     grid: auto-flow / repeat(auto-fit,minmax(200px,1fr));
     /*grid-template-columns: 1fr 1fr;*/
     /*grid-template-rows: 1fr 1fr;*/
-    
+
     /*gap == grid-gap. grid-gap being deprecated */
     grid-gap: 10px;
     gap: 10px;
@@ -49,43 +69,78 @@ body {
 
 .mygrid li {
     padding: 10px;
-    text-align: left;
+    text-align: center;
     border: none
-    background: #blue;
+    background: #f4f4f4;
 }
 
 .mygrid img {
     max-width: 100%;
 }
-
-.list-group{
-position:right;
-text-align: center;
-align-items: baseline;
+ul {
+display: none;
+paddint: 0px
 }
-
-
-
+li {
+display: list-item;
+}
 </style>
+<ul class="mygrid">
+<li>
+<label for="row_asteroid">Rows:</label>
+<input type="text" id="row_asteroid" name="row_asteroid" value =40 required
+       minlength="1" maxlength="3" size="5">
+<br>
+<label for="col_asteroid">Columns:[1-100] </label>
+<input type="text" id="col_asteroid" name="col_asteroid" value =40 required
+       minlength="1" maxlength="3" size="5">
+<br>
+	   <label for="percent_asteroids">% Asteroids [0 to 100]:</label>
+<input type="text" id="percent_asteroids" name="percent_asteroids" value =25 required
+       minlength="1" maxlength="3" size="5">
+<br>
+<label for="base_asteroid">Home Base:</label>
+<input type="text" id="base_asteroid" name="base_asteroid" value =209 required
+       minlength="1" maxlength="4" size="5">
+<br>
+<label for="laser_speed">Shoot Speed [milliseconds]:</label>
+<input type="text" id="laser_speed" name="laser_speed" value =20 required
+       minlength="1" maxlength="4" size="5">
+<br>
+<label for="asteroid_stop">Final Asteroid:</label>
+<input type="text" id="asteroid_stop" name="asteroid_stop" value =290 required
+       minlength="1" maxlength="4" size="5">
+
+<br>
+<!--<button onclick="draw()">Draw!!</button>-->
+<button id="real_instructions" onclick="show_hide_instructions()">Hide/Show Instructions</button>
+        <br>
+<button id="ma" onclick="mapgenerator()">Generate Map!</button>
+<!-- <button id="cl" onclick="clearcanvas()">clear!</button>-->
+<button id="ex" onclick="explode()">Explode!</button>
+<button id="ed" onclick="editmap()">Customize Map</button>
+<!--<button onclick="reset()">reset!</button>-->
+<br>
+</li>
+<li>
+<img id="img_instr" src="/assets/ast_instr.png" alt="Instructions image" height="340" width="340">
+<br>
+    <textarea id="textarea_push" rows="30" cols="70" style="display:none">
+</li>
+</ul>
+Generate plz.
+</textarea>
+</div>
+<div class="col">
 
 <br><br>
-	<p id = "frontpage"> </p>
-<div class="btn-group social-media-buttons">
-        <a href="mailto:p.rozehnal@gmail.com" target="_blank" rel="noopener noreferrer">
-            <button class="btn btn-sm btn-default" type="button">
-                <i class="far fa-envelope-open fa-2x"></i>
-            </i></button></a>
 
-      </div>
-<script>
+<canvas id="canvas" width="2000" height="2000">
+An alternative text describing what your canvas displays. My visualizer.
+</canvas>
 
-var listofsayings = ['a place for oversharing.','happiness is not a fish you can catch','who makes sick and then offers the cure?','each self is the final arbiter of truth', 'calm is a superpower', 'observe silence', 'a place for oversharing..', 'church & science. theory & practice. gods & monkeys', 'do you have puzzle drive?', 'reward good work','a place for oversharing...']
-
-var diceindex = Math.floor(Math.random() * listofsayings.length)
-
-document.getElementById("frontpage").innerHTML = listofsayings[diceindex];
-
-</script>
-
-<br><br>
+<script src="/collections/_tprojects/js/aocsteroids.js"></script>
+    </main>
 </body>
+<!--stack link for container. i used aditya's code: https://stackoverflow.com/questions/46996809/how-to-display-two-columns-in-html/46996991 -->
+<!--INSTRUCTIONS A '#' is an asteroid.
