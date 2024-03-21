@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Stat Keeping 4 Honesty's Sake
+title: Made Private
 ---
 
 <!---
